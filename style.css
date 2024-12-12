@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    animation: gradient 5s ease infinite;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff5e78;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yes-button {
+    background: #4caf50;
+    color: white;
+}
+
+.no-button {
+    background: #ff5e78;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+#thankYouMessage {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4caf50;
+    margin-top: 20px;
+}
+
+@keyframes gradient {
+    0% {
+        background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    }
+    50% {
+        background: linear-gradient(135deg, #B660CD, #FFE4E1);
+    }
+    100% {
+        background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    }
+}
